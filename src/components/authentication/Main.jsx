@@ -60,6 +60,12 @@ function Main(props) {
                 onClick={() => setSignInModalIsOpen(true)}
               >
                 <div className="link__button link__button--black ">Sign in</div>
+                <Link
+                  to="/main"
+                  className="link__button link__button--black offlineButton"
+                >
+                  OFFLINE ACCESS FOR VIEW ONLY
+                </Link>
               </button>
             </div>
           </section>
