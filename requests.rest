@@ -1,0 +1,65 @@
+#======================================#
+#                                      #
+#      Authentication Requests         #
+#                                      #
+#======================================#
+
+GET http://localhost:4001/users
+
+###
+
+# CREATE A NEW ACCOUNT
+POST http://localhost:4001/users
+Content-Type: application/json
+
+ {
+    "username": "Sam",
+    "password": "password",
+    "email": "test@1234.com"
+ }
+
+###
+
+# LOGIN TO ACCOUNT
+POST http://localhost:4001/login
+Content-Type: application/json
+
+{
+    "password": "password",
+    "email": "test@1234.com"
+}
+
+###
+
+# REFRESH ACCESS TOKEN (requires refresh token)
+POST http://localhost:4001/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhbSIsInBhc3N3b3JkIjoiJDJiJDEwJDdTZ3pUekZuUXZrbExYVGtoS2lSay5xbk55ejF2Z0dQblRIWS8yT0hxSkJ4SE9kcE5jN3ZpIiwiZW1haWwiOiJ0ZXN0QDEyMzQuY29tIiwiaWF0IjoxNjYzMTEwNjUzfQ.snte0zqj-CYMPDvjzq4XGCMktxmqgw7Ia19iklXxu9I"
+}
+
+
+###
+
+# LOGOUT OF ACCOUNT (requires refresh token)
+DELETE http://localhost:4001/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhbSIsInBhc3N3b3JkIjoiJDJiJDEwJGgycmNQNXlPbUtVWXpIcjBCRlQvWk8yMWZST0RHNThweER6M0pnLy94ZG5iTVlUSjk3bThHIiwiZW1haWwiOiJ0ZXN0QDEyMzQuY29tIiwiaWF0IjoxNjYzMTEwNDAzfQ.v3LiS1mniBMwwXsqVtlF1lmeMFNDLooUUjw3p-t2OTc"
+}
+
+
+###
+
+# ==========================#
+#                           #
+#      API Requests         #
+#                           #
+# ==========================#
+
+# GET ALL POSTS FROM CURRENT USER (requires a valid access token)
+GET http://localhost:4000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhbSIsInBhc3N3b3JkIjoiJDJiJDEwJHJBZmRqeFpUR1ZFR2pJNFJpZFhRNnVIS3FDM21PanRmem1rWFNoVnlkNFBTTDNaT2k4V1RLIiwiZW1haWwiOiJ0ZXN0QDEyMzQuY29tIiwiaWF0IjoxNjYzMTcxMzg1LCJleHAiOjE2NjMxNzE0MDV9.WefrtBhvSskrkmFxtZRC2-BxrPHdKYY9WLJ2ipd49O8
+###
