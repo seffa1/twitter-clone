@@ -1,13 +1,15 @@
 import React from "react";
 import profilePic from "../../images/profile_pic.jpeg";
+import Tweet from "./Tweet";
 
 function Feed() {
   return (
     <section className="Feed">
+      {/* Tweet composition section */}
       <section className="Feed__compose">
         <h1 className="Feed__compose__header">Home</h1>
         <div className="Feed__compose__container">
-          <img src={profilePic} className="Feed__compose__pic"></img>
+          <img src={profilePic} className="profile-img"></img>
           <div className="Feed__compose__container--inner">
             <textarea
               placeholder="What's happening?"
@@ -39,6 +41,11 @@ function Feed() {
           </div>
         </div>
       </section>
+
+      {/* Tweet container section */}
+      <div className="Feed__tweet-container">
+        <Tweet />
+      </div>
     </section>
   );
 }

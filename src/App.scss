@@ -31,9 +31,28 @@ h4 {
   color: rgba($color-dark3, 1);
 }
 
+// images
+.profile-img {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+
+  &--small {
+    border-radius: 50%;
+    height: 42px;
+    width: 42px;
+  }
+}
+
 // offline access
 .offlineButton {
   margin-top: 2rem;
+}
+@media screen and (max-width: 700px) {
+  .offlineButton {
+    background: black;
+    color: $color-blue;
+  }
 }
 
 // forms
@@ -441,12 +460,6 @@ h4 {
     padding: 1rem;
     border-radius: 40px;
 
-    &__pic {
-      height: 42px;
-      width: 42px;
-      border-radius: 50%;
-    }
-
     &__name-container {
       display: flex;
       flex-direction: column;
@@ -600,12 +613,6 @@ h4 {
       margin-bottom: 1.3rem;
     }
 
-    &__pic {
-      height: 55px;
-      width: 55px;
-      border-radius: 50%;
-    }
-
     &__container {
       display: flex;
       justify-content: flex-start;
@@ -669,6 +676,12 @@ h4 {
       margin-right: 1rem;
     }
   }
+
+  &__tweet-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 630px) {
@@ -682,6 +695,60 @@ h4 {
   .Feed {
     &__compose {
       display: none;
+    }
+  }
+}
+
+//
+//
+//
+// Tweet ===========================
+.Tweet {
+  width: 100%;
+  display: flex;
+  padding-left: 1.4rem;
+  padding-top: 1.6rem;
+
+  &__container {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    flex-shrink: 1;
+  }
+
+  &__content {
+    padding-right: 1rem;
+    word-wrap: break-word;
+  }
+
+  &__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    &__name {
+      padding-right: 7px;
+      // flex-shrink: 0;
+    }
+
+    &__username {
+    }
+
+    &__dot {
+      padding-left: 4px;
+      padding-right: 4px;
+      font-size: 0.6rem;
+    }
+
+    &__date {
+      margin-right: auto;
+      flex-shrink: 0;
+    }
+
+    &__dots {
+      padding-right: 1rem;
     }
   }
 }

@@ -66,7 +66,7 @@ function Navbar() {
           className="Navbar__profile"
           onClick={() => setSignOutModalIsOpen(true)}
         >
-          <img src={profilePic} className="Navbar__profile__pic"></img>
+          <img src={profilePic} className="profile-img--small"></img>
           <div className="Navbar__profile__name-container">
             <h3>Effa</h3>
             <h4>@effamusic</h4>
