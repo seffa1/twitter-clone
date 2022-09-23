@@ -6,7 +6,7 @@ This project is still in progress. You can hit "OFFLINE ACCESS FOR VIEW ONLY" to
 
 This project contains two bacbend servers.
 server.js is our API server which will serve our app with data
-from a databse..
+from a databse.
 
 authServer.js handles access and refresh tokens to handle
 users signing in and out out. Refresh token are stored in a database
