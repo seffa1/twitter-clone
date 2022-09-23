@@ -1,10 +1,12 @@
 ## Twitter clone
+
 This project is still in progress. You can hit "OFFLINE ACCESS FOR VIEW ONLY" to get passed authentication for now. I wanted to build a full stack application with user athentication. There are two backend servers. One as the API to the firebase database, and the other for user athentication. The auth server issues issues access token and refresh tokens. Refresh token are saved in the database and are used to create new access tokens when they expire. Access tokens have a short lifespan to increase security. Users can delete refresh tokens by signing out or resetting their password.
 
 ## Project layout and start up
+
 This project contains two bacbend servers.
 server.js is our API server which will serve our app with data
-from a databse.
+from a databse..
 
 authServer.js handles access and refresh tokens to handle
 users signing in and out out. Refresh token are stored in a database
@@ -28,4 +30,3 @@ RUN: npm start
 <img width="1489" alt="twitter_main" src="https://user-images.githubusercontent.com/94399429/191866539-1f53f423-d84d-4e4c-9a4e-9bb8c73cec00.png">
 
 <img width="1490" alt="twitterSignIn" src="https://user-images.githubusercontent.com/94399429/191866577-32e07640-3ca9-4f59-8fd5-01f69eae10f7.png">
-
