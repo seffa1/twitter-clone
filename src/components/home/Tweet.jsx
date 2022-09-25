@@ -21,19 +21,21 @@ function Tweet(props) {
         </p>
         {/* Footer */}
         <div className="Tweet__footer">
-          <div className="flex-row flex-gap--1">
+          <div className="flex-row flex-gap--1 Tweet__footer__container--comment">
             <i class="fa-regular fa-comment Tweet__footer__icon"></i>
             <div className="Tweet__footer__counter">5</div>
           </div>
-          <div className="flex-row flex-gap--1">
+          <div className="flex-row flex-gap--1 Tweet__footer__container--retweet">
             <i class="fa-solid fa-retweet Tweet__footer__icon"></i>
             <div className="Tweet__footer__counter">14</div>
           </div>
-          <div className="flex-row flex-gap--1">
+          <div className="flex-row flex-gap--1 Tweet__footer__container--like">
             <i class="fa-regular fa-heart Tweet__footer__icon"></i>
             <div className="Tweet__footer__counter">45</div>
           </div>
-          <i class="fa-solid fa-arrow-up-from-bracket"></i>
+          <div className="Tweet__footer__container--comment">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+          </div>
         </div>
       </div>
     </article>

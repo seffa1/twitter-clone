@@ -14,6 +14,9 @@ $color-dark3: #71767b;
 $color-blue: #1d9bf0;
 $border-radius: 10px;
 
+$color-retweet: #19cf86;
+$color-like: #e61656;
+
 @custom-media --mobile (max-width: 450px);
 
 // typography
@@ -773,6 +776,25 @@ h4 {
     align-items: center;
     color: $color-dark3;
     margin-top: 1rem;
+
+    &__container--comment,
+    &__container--retweet,
+    &__container--like {
+      transition: all 0.2s ease;
+    }
+
+    &__container--comment:hover {
+      color: $color-blue;
+      cursor: pointer;
+    }
+    &__container--retweet:hover {
+      color: $color-retweet;
+      cursor: pointer;
+    }
+    &__container--like:hover {
+      color: $color-like;
+      cursor: pointer;
+    }
 
     &__icon,
     &__counter {
