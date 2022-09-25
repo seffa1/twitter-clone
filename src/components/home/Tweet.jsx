@@ -16,10 +16,25 @@ function Tweet(props) {
         </header>
         {/* Tweet content */}
         <p className="Tweet__content">
-          Q: Why did the React class component feel relieved? A: Because it was
-          now off the hook.
+          q. Why was the JavaScript developer sad? a. Because they didn't Node
+          how to Express himself
         </p>
         {/* Footer */}
+        <div className="Tweet__footer">
+          <div className="flex-row flex-gap--1">
+            <i class="fa-regular fa-comment Tweet__footer__icon"></i>
+            <div className="Tweet__footer__counter">5</div>
+          </div>
+          <div className="flex-row flex-gap--1">
+            <i class="fa-solid fa-retweet Tweet__footer__icon"></i>
+            <div className="Tweet__footer__counter">14</div>
+          </div>
+          <div className="flex-row flex-gap--1">
+            <i class="fa-regular fa-heart Tweet__footer__icon"></i>
+            <div className="Tweet__footer__counter">45</div>
+          </div>
+          <i class="fa-solid fa-arrow-up-from-bracket"></i>
+        </div>
       </div>
     </article>
   );
