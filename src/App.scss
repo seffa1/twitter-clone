@@ -3,7 +3,7 @@
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
-  // background: rgba(255, 0, 255, 0.1);
+  background: rgba(255, 0, 255, 0.1);
 }
 
 $color-primary: black;
@@ -822,13 +822,39 @@ h4 {
 //
 // Recommended ===========================
 .Recommended {
+  margin-top: 0.3rem;
   color: white;
   width: 350px;
+
+  &__search-container {
+    width: 100%;
+    background: rgba($color-dark2, 0.5);
+    border-radius: 30px;
+    padding: 0.9rem 1.2rem;
+    display: flex;
+    align-content: center;
+  }
+
+  &__search-icon {
+    margin-right: 1rem;
+    color: $color-dark3;
+    padding-top: 3px;
+  }
+
+  &__search-input {
+    font-size: 1rem;
+    border: none;
+    background: none;
+  }
+
+  &__search-input:focus {
+    outline: none;
+  }
 }
 
 @media screen and (max-width: 1092px) {
   .Recommended {
-    width: 250px;
+    width: 270px;
   }
 }
 

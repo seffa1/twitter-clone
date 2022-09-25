@@ -50,17 +50,16 @@ function Main(props) {
                   Sign up with email
                 </div>
               </button>
-
               <h3 className="Main__container__info__h3">
                 Already have an account?
               </h3>
-
               <button
                 className="link--white link--wide"
                 onClick={() => setSignInModalIsOpen(true)}
               >
                 <div className="link__button link__button--black ">Sign in</div>
               </button>
+              1
               <button className="link--white link--wide">
                 <Link
                   to="/main"
