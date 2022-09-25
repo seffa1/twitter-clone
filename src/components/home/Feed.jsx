@@ -11,12 +11,15 @@ function Feed() {
         <div className="Feed__compose__container">
           <img src={profilePic} className="profile-img"></img>
           <div className="Feed__compose__container--inner">
+            {/* Text area */}
             <textarea
               placeholder="What's happening?"
               className="Feed__compose__input"
               rows="5"
               maxLength="280"
             ></textarea>
+
+            {/* Attachments */}
             <ul className="Feed__compose__attachments">
               <li>
                 <i class="fa-regular fa-image"></i>
@@ -36,6 +39,8 @@ function Feed() {
               <li>
                 <i class="fa-solid fa-location-dot"></i>
               </li>
+
+              {/* Tweet button */}
               <button className="Feed__compose__tweet">Tweet</button>
             </ul>
           </div>
