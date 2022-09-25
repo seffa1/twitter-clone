@@ -3,7 +3,7 @@
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
-  background: rgba(255, 0, 255, 0.1);
+  // background: rgba(255, 0, 255, 0.1);
 }
 
 $color-primary: black;
@@ -11,6 +11,7 @@ $color-secondary: white;
 $color-dark1: rgb(20, 19, 19);
 $color-dark2: rgb(83, 70, 70);
 $color-dark3: #71767b;
+$color-dark4: rgba($color-dark2, 0.4);
 $color-blue: #1d9bf0;
 $border-radius: 10px;
 
@@ -39,6 +40,10 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.flex-spaced {
+  justify-content: space-between;
 }
 
 .flex-gap--1 {
@@ -826,9 +831,10 @@ h4 {
   color: white;
   width: 350px;
 
+  // Search bar ===========
   &__search-container {
     width: 100%;
-    background: rgba($color-dark2, 0.5);
+    background: $color-dark4;
     border-radius: 30px;
     padding: 0.9rem 1.2rem;
     display: flex;
@@ -845,10 +851,23 @@ h4 {
     font-size: 1rem;
     border: none;
     background: none;
+    caret-color: white;
   }
 
   &__search-input:focus {
     outline: none;
+  }
+
+  // Trending ===========
+
+  &__whatsHappening {
+    background: $color-dark4;
+    margin-top: 1rem;
+    border-radius: 20px;
+
+    &__title {
+      padding: 1rem 1rem;
+    }
   }
 }
 
@@ -873,4 +892,28 @@ h4 {
     margin-right: 0px;
     padding-right: 0;
   }
+}
+
+//
+//
+//
+// Trending ===========================
+.Trending {
+  width: 100%;
+  // background: wheat;
+  padding: 1rem 1rem;
+
+  &__pic {
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+
+  transition: all 0.2s ease;
+}
+
+.Trending:hover {
+  background: rgba(rgb(114, 114, 114), 0.1);
+  cursor: pointer;
 }
