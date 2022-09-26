@@ -49,7 +49,71 @@ function Feed() {
 
       {/* Tweet container section */}
       <div className="Feed__tweet-container">
-        <Tweet />
+        <Tweet
+          data={{
+            name: "SamEffa",
+            username: "@samueleffa",
+            profilePicture: "1",
+            date: "Aug 26",
+            content:
+              "q. Why was the JavaScript developer sad? a. Because they didn't Node how to Express himself",
+            commentCounter: "5",
+            retweetCounter: "14",
+            likeCounter: "45",
+          }}
+        />
+        <Tweet
+          data={{
+            name: "JohnSmith",
+            username: "@smith007",
+            profilePicture: "2",
+            date: "Aug 27",
+            content:
+              "Why did the developer stay home from work? She had a code!",
+            commentCounter: "15",
+            retweetCounter: "24",
+            likeCounter: "99",
+          }}
+        />
+        <Tweet
+          data={{
+            name: "Jessica Blue",
+            username: "@bluescluesJJ",
+            profilePicture: "3",
+            date: "Aug 27",
+            content:
+              "Why was the JavaScript reality show cancelled after only one episode? People thought it seemed scripted.",
+            commentCounter: "2",
+            retweetCounter: "3",
+            likeCounter: "9",
+          }}
+        />
+        <Tweet
+          data={{
+            name: "Carry Overwood",
+            username: "@yesThatsMyName",
+            profilePicture: "4",
+            date: "Aug 28",
+            content:
+              "Why was the class upset that its parent died? Because it wouldn’t be getting the inheritance!",
+            commentCounter: "229",
+            retweetCounter: "1809",
+            likeCounter: "458",
+          }}
+        />
+        <Tweet
+          data={{
+            name: "Jake Dawg",
+            username: "@jakedawgy",
+            profilePicture: "5",
+            date: "Aug 26",
+            content:
+              "q. Why was the JavaScript developer sad? a. Because they didn't Node how to Express himself",
+            commentCounter: "5",
+            retweetCounter: "14",
+            likeCounter: "45",
+          }}
+        />
       </div>
     </section>
   );
