@@ -20,6 +20,10 @@ $color-like: #e61656;
 
 @custom-media --mobile (max-width: 450px);
 
+Body {
+  background: $color-primary;
+}
+
 // typography
 h1 {
   font-size: 1.4rem;
@@ -444,6 +448,7 @@ h4 {
   font-size: 1.2rem;
   color: white;
   padding-top: 1rem;
+  position: relative;
 
   &__ul {
     list-style: none;
@@ -596,20 +601,22 @@ h4 {
   }
 }
 
-//
+//,
+// left: `${profilePosition}px`,
 //
 //
 // Sign Out Modal ===========================
-.SignOut {
-  width: 300px;
-  height: 200px;
-  background: $color-primary;
-  position: absolute;
-  bottom: 100px;
-  left: 100px;
-  border-radius: 20px;
-  box-shadow: 1px 0px 6px 2px rgba(255, 255, 255, 0.3);
-}
+// .SignOut {
+//   width: 300px;
+//   height: 200px;
+//   background: $color-primary;
+//   position: absolute;
+//   bottom: 100px;
+//   left: 0px;
+
+//   border-radius: 20px;
+//   box-shadow: 1px 0px 6px 2px rgba(255, 255, 255, 0.3);
+// }
 
 //
 //
@@ -741,6 +748,7 @@ h4 {
   display: flex;
   padding-left: 1.4rem;
   padding-top: 1.6rem;
+  outline: 1px solid $color-dark2;
 
   &__container {
     max-width: 90%;
@@ -820,6 +828,11 @@ h4 {
       font-weight: 200;
     }
   }
+}
+
+.Tweet:hover {
+  background: rgba($color-dark2, 0.3);
+  cursor: pointer;
 }
 
 //
