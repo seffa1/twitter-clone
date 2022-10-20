@@ -3,11 +3,7 @@
 // https://jasonwatmore.com/post/2020/07/17/react-axios-http-post-request-examples
 const axios = require("axios").default;
 // axios.defaults.withCredentials = true;
-// TODO: Cant figure this stupid fucking shit out
-// Why the fuck cant i get cookies back using axios
-// What the fuck is cors
-// Why does everyone on stack overflow talk like a fucking
-// 40 year career IT tech
+// TODO:
 
 // ====================================
 //

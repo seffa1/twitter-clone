@@ -27,6 +27,7 @@ let users = [
 
 // CREATE A NEW ACCOUNT
 app.post("/users", async (req, res) => {
+  console.log("Create account received!");
   try {
     // TODO: Replace this with a db lookup
     // check if it already exists

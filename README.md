@@ -1,12 +1,12 @@
 ## Twitter clone
 
-This project is still in progress. You can hit "OFFLINE ACCESS FOR VIEW ONLY" to get passed authentication for now. I wanted to build a full stack application with user athentication. There are two backend servers. One as the API to the firebase database, and the other for user athentication. The auth server issues issues access token and refresh tokens. Refresh token are saved in the database and are used to create new access tokens when they expire. Access tokens have a short lifespan to increase security. Users can delete refresh tokens by signing out or resetting their password.
+This project is still in progress. You can hit "OFFLINE ACCESS FOR VIEW ONLY" to get passed authentication for now. I wanted to build a full stack application with user authentication. There are two backend servers. One as the API to the firebase database, and the other for user authentication. The auth server issues issues access token and refresh tokens. Refresh token are saved in the database and are used to create new access tokens when they expire. Access tokens have a short lifespan to increase security. Users can delete refresh tokens by signing out or resetting their password.
 
 ## Project layout and start up
 
-This project contains two bacbend servers.
+This project contains two backend servers.
 server.js is our API server which will serve our app with data
-from a databse.
+from a database.
 
 authServer.js handles access and refresh tokens to handle
 users signing in and out out. Refresh token are stored in a database
@@ -16,7 +16,7 @@ To start these servers:
 RUN: npm run devStart
 RUN: npm run devStartAuth
 
-To configure your athentication server:
+To configure your authentication server:
 1.) Create a .env file in the main project directory
 2.) In that file add:
 ACCESS_TOKEN_SECRET=<your access token secret>

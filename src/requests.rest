@@ -25,8 +25,8 @@ POST http://localhost:4001/login
 Content-Type: application/json
 
 {
-    "password": "poipoipoi",
-    "email": "poi@poi.poi"
+    "password": "password",
+    "email": "test@1234.com"
 }
 
 ###
@@ -36,7 +36,7 @@ POST http://localhost:4001/token
 Content-Type: application/json
 
 {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhbSIsInBhc3N3b3JkIjoiJDJiJDEwJDdTZ3pUekZuUXZrbExYVGtoS2lSay5xbk55ejF2Z0dQblRIWS8yT0hxSkJ4SE9kcE5jN3ZpIiwiZW1haWwiOiJ0ZXN0QDEyMzQuY29tIiwiaWF0IjoxNjYzMTEwNjUzfQ.snte0zqj-CYMPDvjzq4XGCMktxmqgw7Ia19iklXxu9I"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhbSIsInBhc3N3b3JkIjoiJDJiJDEwJGhhbE8uRUdRbTMvU0p6ajZXUDlMTU8zbVhjaWUyRnBWd2w5dGpvSGNEdlRFYkZoZGFuckFpIiwiZW1haWwiOiJ0ZXN0QDEyMzQuY29tIiwiaWF0IjoxNjY2MjYwNjU1fQ.iD4Rek9KE_5uC_CIpxymFhJA9XLGjHHkHszUKsm-OE0"
 }
 
 
@@ -61,5 +61,5 @@ Content-Type: application/json
 
 # GET ALL POSTS FROM CURRENT USER (requires a valid access token)
 GET http://localhost:4000/posts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNhbSIsInBhc3N3b3JkIjoiJDJiJDEwJHJBZmRqeFpUR1ZFR2pJNFJpZFhRNnVIS3FDM21PanRmem1rWFNoVnlkNFBTTDNaT2k4V1RLIiwiZW1haWwiOiJ0ZXN0QDEyMzQuY29tIiwiaWF0IjoxNjYzMTcxMzg1LCJleHAiOjE2NjMxNzE0MDV9.WefrtBhvSskrkmFxtZRC2-BxrPHdKYY9WLJ2ipd49O8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAMTIzNC5jb20iLCJpYXQiOjE2NjYyNjA3NzcsImV4cCI6MTY2NjI2MDc5N30.SiZTAR5skcjN6yOTkqR1MDyfe240FfCv75Lcz3ZIKsk
 ###
