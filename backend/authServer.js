@@ -20,7 +20,7 @@ let refreshTokens = [];
 let users = [
   {
     username: "poi",
-    password: "$2b$10$VrXCNMvQPk1MonwKvP.PE.VBq0k58T/MWR7FKyyvNpCJ.lExDhqka",
+    password: "password",
     email: "poi@poi.poi",
   },
 ];
@@ -77,8 +77,10 @@ app.post("/login", async (req, res) => {
       refreshTokens.push(refreshToken);
       res.cookie("accessToken", accessToken, { httpOnly: true });
       res.cookie("refreshToken", refreshToken, { httpOnly: true });
+      // TODO: Redirect to main page:
+      // res.redirect("/home");
       res.json({
-        message: "Sign in sucessful",
+        message: "Sign in successful",
         accessToken: accessToken,
         refreshToken: refreshToken,
       });

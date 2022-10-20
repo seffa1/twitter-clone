@@ -62,7 +62,7 @@ function Main(props) {
               1
               <button className="link--white link--wide">
                 <Link
-                  to="/main"
+                  to="/home"
                   className="link__button link__button--black offlineButton"
                 >
                   OFFLINE ACCESS FOR VIEW ONLY
