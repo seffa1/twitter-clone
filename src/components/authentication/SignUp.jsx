@@ -26,7 +26,7 @@ function SignUp(props) {
       }
     });
 
-    // If its invalid, give user an error message (ie. email already exists)
+    // TODO: If its invalid, give user an error message (ie. email already exists)
   }
 
   const [name, setName] = useState("");
@@ -83,7 +83,7 @@ function SignUp(props) {
           pattern="[a-zA-Z0-9]{8,}"
           onChange={(e) => setPasswordConfirm(e.target.value)}
         />
-        {/* TODO: Forgot your password reset */}
+        
         <button type="submit" className="SignUp__submit input__submit ">
           Create account
         </button>
